@@ -1,5 +1,20 @@
 @media screen and (min-width: 768px) {
+    .ficha .paragrafo {
+        width: 85%;
+    }
     .skill-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .projeto-container .projeto {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .projeto-container .projeto-info {
+        max-width: 70%;
+    }
+    .projeto-container .foto {
+        aspect-ratio: 1/1;
+        max-height: 300px;
+    }
 }
+

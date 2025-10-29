@@ -17,6 +17,11 @@
     --fundo-card: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5em;
@@ -30,7 +35,11 @@ header {
     align-content: center;
     background-color: var(--destaque);
     color: var(--texto);
-    padding: 30px 10px;
+    padding: 25px 10px;
+    position: sticky;
+    top: 0;
+    /* camada */
+    z-index: 1;
 }
 
 .menu ul {
@@ -53,7 +62,7 @@ header {
     }
 }
 
-main {
+.main-flex {
     display: grid;
     grid-template-columns: auto 90vw auto;
     gap: 20px;
@@ -85,9 +94,19 @@ main {
 .ficha h1 {
     color: var(--destaque);
     font-weight: 600;
-    margin: 15px 0;
+    margin: 20px 0;
     font-size: 1.5em;
     text-align: left;
+}
+
+.ficha .paragrafo {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.ficha p {
+    color: var(--texto);
+    text-align: justify;
 }
 
 
@@ -97,7 +116,7 @@ main {
     align-items: center;
     font-size: 1.6em;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .social a {
@@ -228,8 +247,64 @@ article h2 i {
     }
 }
 
+.projeto-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
 
+.projeto-container .projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--fundo-principal);
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+    transition: border-color 0.5s, border-width 0.5s;
+    &:hover {
+        border-color: var(--destaque);
+        border-left-width: 15px;
+        cursor: pointer;
+    }
+}
 
+.projeto-container .foto {
+    box-shadow: 2px 2px 5px #000000;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: border 0.3s, outline 0.3s;
+    &:hover {
+        border: 5px solid var(--fundo-principal);
+        outline: 5px solid var(--fundo-principal);
+    }
+}
+
+.projeto-info h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--destaque);
+    color: var(--texto-inverso);
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: var(--texto-inverso);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s;
+    &:hover {
+        text-decoration: underline;
+        color: var(--destaque-inverso);
+    }
+}
 
 
 

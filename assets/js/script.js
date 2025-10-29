@@ -1,5 +1,9 @@
-const botao = document.getElementById('tema');
+const botao = document.getElementById('botao-tema');
 const body = document.body;
+
+// Persistência do tema
+const temasalvo = localStorage.getItem('tema');
+temaEscuro(temasalvo === 'escuro');
 
 // Função para alternar entre tema claro e escuro
 function temaEscuro(tipo) {
@@ -8,12 +12,9 @@ function temaEscuro(tipo) {
         botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
     } else {
         body.classList.remove('escuro');
+        botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
     }
 }
-
-// Persistência do tema
-const temasalvo = localStorage.getItem('tema');
-temaEscuro(temasalvo === 'escuro');
 
 botao.addEventListener('click', () => {
     const isescuro = body.classList.toggle('escuro');
@@ -22,7 +23,7 @@ botao.addEventListener('click', () => {
 });
 
 //scroll suave para links de navegação
-const navLinks = document.querySelectorAll('#menu ul a');
+const navLinks = document.querySelectorAll('.menu ul li a');
 navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();

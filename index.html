@@ -15,277 +15,329 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="#"><i class="fa-solid fa-house"></i></a>
+                    <a href="#audio" class="link"><i class="fa-solid fa-house"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-dumbbell"></i></a>
+                    <a href="#skills" class="link"><i class="fa-solid fa-dumbbell"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+                    <a href="#training" class="link"><i class="fa-solid fa-graduation-cap"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-folder-open"></i></a>
+                    <a href="#projetos" class="link"><i class="fa-solid fa-folder-open"></i></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa-solid fa-moon"></i></a>
+                    <a href="#" id="botao-tema"><i class="fa-solid fa-moon"></i></a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="ficha">
-            <figure>
-                <img src="assets/img/foto-perfil.JPG" alt="Johnny Kalleby" class="foto">
-                <h1>Kalleby Alencar</h1>
-                <p>Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e com desejo constante de aprender e evoluir diante das novidades que o mercado traz. Tenho foco em desenvolvimento web e estou sempre buscando aprimorar minhas habilidades para criar soluções modernas, eficientes e funcionais para todos.</p>
-                <div class="social">
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/kallebyalencar" target="_blank" rel="nofollow">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/kalleby.sx?igsh=empyMGNqMjNseGxv&utm_source=qr" target="_blank" rel="nofollow">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </figure>
-        </section>
-        <section class="detalhes">
-            <article class="audio">
-                <h2><i class="fa-solid fa-handshake"></i>Deixe-me apresentar</h2>
-                <div class="audio-container">
-                    <audio preload="auto" autoplay controls>
-                        <source src="assets/files/apresentacao.mp3" type="audio/mpeg">
-                        <source src="assets/files/apresentacao.mp3" type="audio/ogg">
-                        <source src="assets/files/apresentacao.mp3" type="audio/wav">
-                        <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="assets/files/apresentacao.mp3" target="_blank" rel="nofollow"></a></p>
-                    </audio>
-                </div>
-            </article> <!-- Fim article .audio -->
-
-            <article class="skills">
-                <h2><i class="fa-solid fa-dumbbell"></i>Minhas Skills</h2>
-
-                <div class="skill-container">
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-code"></i>html5
-                            </span>
-                            <span class="porcent">
-                                80%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div>
+        <div class="main-flex">
+            <section class="ficha" id="ficha">
+                <figure>
+                    <img src="assets/img/foto-perfil.JPG" alt="Johnny Kalleby" class="foto">
+                    <h1>Kalleby Alencar</h1>
+                    <div class="paragrafo">
+                        <p>Estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e com desejo constante de aprender e evoluir diante das novidades que o mercado traz. Tenho foco em desenvolvimento web e estou sempre buscando aprimorar minhas habilidades para criar soluções modernas, eficientes e funcionais para todos.</p>
                     </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-code"></i>css3
-                            </span>
-                            <span class="porcent">
-                                75%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 75%;"></div>
-                        </div>
+                    <div class="social">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/kallebyalencar" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kalleby.sx?igsh=empyMGNqMjNseGxv&utm_source=qr" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-code"></i>JavaScript
-                            </span>
-                            <span class="porcent">
-                                0%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 0;"></div>
-                        </div>
+                </figure>
+            </section>
+            <section class="detalhes">
+                <article class="audio" id="audio">
+                    <h2><i class="fa-solid fa-handshake"></i>Deixe-me apresentar</h2>
+                    <div class="audio-container">
+                        <audio preload="auto" autoplay controls>
+                            <source src="assets/files/apresentacao.mp3" type="audio/mpeg">
+                            <source src="assets/files/apresentacao.mp3" type="audio/ogg">
+                            <source src="assets/files/apresentacao.mp3" type="audio/wav">
+                            <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="assets/files/apresentacao.mp3" target="_blank"></a></p>
+                        </audio>
                     </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-code"></i>php
-                            </span>
-                            <span class="porcent">
-                                50%
-                            </span>
+                </article> <!-- Fim article .audio -->
+                <article class="skills" id="skills">
+                    <h2><i class="fa-solid fa-dumbbell"></i>Minhas Skills</h2>
+                    <div class="skill-container">
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i>html5
+                                </span>
+                                <span class="porcent">
+                                    80%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
                         </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 50%;"></div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i>css3
+                                </span>
+                                <span class="porcent">
+                                    75%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
                         </div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i>JavaScript
+                                </span>
+                                <span class="porcent">
+                                    0%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 0;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i>php
+                                </span>
+                                <span class="porcent">
+                                    50%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
+                                            <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i>CodeIgniter
+                                </span>
+                                <span class="porcent">
+                                    5%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 5%;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i>Postgresql
+                                </span>
+                                <span class="porcent">
+                                    80%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-code"></i>git + github
+                                </span>
+                                <span class="porcent">
+                                    90%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-brain"></i>Colaboração
+                                </span>
+                                <span class="porcent">
+                                    100%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-brain"></i>Comunicação
+                                </span>
+                                <span class="porcent">
+                                    95%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-brain"></i>Adaptabilidade
+                                </span>
+                                <span class="porcent">
+                                    100%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
+                        <!-- Inicio item -->
+                        <div class="item">
+                            <div class="info">
+                                <span class="nome">
+                                    <i class="fa-solid fa-brain"></i>Proatividade
+                                </span>
+                                <span class="porcent">
+                                    95%
+                                </span>
+                            </div>
+                            <div class="barra">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <!-- Final item -->
                     </div>
-                    <!-- Final item -->
-
-                                        <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-code"></i>CodeIgniter
-                            </span>
-                            <span class="porcent">
-                                5%
-                            </span>
+                </article> <!-- Fim article .skills -->
+                <article class="training" id="training">
+                    <h2><i class="fa-solid fa-graduation-cap"></i>Formação</h2>
+                    <div class="training-container">
+                        <!-- start training -->
+                        <div class="curso">
+                            <p class="periodo">2016</p>
+                            <h3 class="institution"><a href="https://www.microlins.com.br/" target="_blank" rel="nofollow">Microlins</a></h3>
+                            <p class="titulation">Pacote Office</p>
                         </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 5%;"></div>
+                        <!-- end training -->
+                        <!-- start training -->
+                        <div class="curso">
+                            <p class="periodo">2022 - 2025</p>
+                            <h3 class="institution"><a href="https://portal.ifce.edu.br/" target="_blank" rel="nofollow">Instituto Federal Ceará</a></h3>
+                            <p class="titulation">Técnico em Eletrotécnica</p>
                         </div>
+                        <!-- end training -->
+                        <!-- start training -->
+                        <div class="curso">
+                            <p class="periodo">2025</p>
+                            <h3 class="institution"><a href="https://unifapce.edu.br/institucional/" target="_blank" rel="nofollow">Centro Universitário Paraíso</a></h3>
+                            <p class="titulation">Análise e Desenvolvimento de Sistemas</p>
+                        </div>
+                        <!-- end training -->
                     </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-code"></i>Postgresql
-                            </span>
-                            <span class="porcent">
-                                80%
-                            </span>
+                </article> <!-- Fim article .formacao -->
+                <article class="projetos" id="projetos">
+                    <h2><i class="fa-solid fa-folder-open"></i>Projetos</h2>
+                    <div class="projeto-container">
+                        <!--Projeto -->
+                        <div class="projeto">
+                            <figure>
+                                <a href="https://kallebyalencar.github.io/projeto-android/" target="_blank"><img src="assets/img/projeto-android.png" alt="Projeto Android" class="foto"></a>
+                            </figure>
+                            <div class="projeto-info">
+                                <p class="periodo">2024</p>
+                                <h3 class="title">Projeto Android</h3>
+                                <p>Primeiro projeto desenvolvido com HTML e CSS, criado para praticar e aprimorar habilidades em desenvolvimento web, explorando estrutura, estilo e boas práticas de código.</p>
+                                <details class="description">
+                                    <summary>Saiba mais</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias vero necessitatibus? Culpa dolor maxime magnam dolore sint. Reiciendis totam, consequatur saepe quas eum asperiores atque autem ducimus rerum dolorem.</p>
+                                </details>
+                            </div>
                         </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 80%;"></div>
+                        <!--Fim Projeto -->
+                        <!--Projeto -->
+                        <div class="projeto">
+                            <figure>
+                                <a href="https://kallebyalencar.github.io/projeto-calculadora-css/" target="_blank"><img src="assets/img/projeto-calculadora.png" alt="Projeto Calculadora" class="foto"></a>
+                            </figure>
+                            <div class="projeto-info">
+                                <p class="periodo">2025</p>
+                                <h3 class="title">Projeto Calculadora</h3>
+                                <p>Calculadora desenvolvida com HTML, CSS e JavaScript, aprimorando habilidades em desenvolvimento web. </p>
+                                <details class="description">
+                                    <summary>Saiba mais</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias vero necessitatibus? Culpa dolor maxime magnam dolore sint. Reiciendis totam, consequatur saepe quas eum asperiores atque autem ducimus rerum dolorem.</p>
+                                </details>
+                            </div>
                         </div>
+                        <!--Fim Projeto -->
+                        <!--Projeto -->
+                        <div class="projeto">
+                            <figure>
+                                <a href="https://kallebyalencar.github.io/projeto-tesla/" target="_blank"><img src="assets/img/projeto-tesla.png" alt="Projeto Tesla" class="foto"></a>
+                            </figure>
+                            <div class="projeto-info">
+                                <p class="periodo">2025</p>
+                                <h3 class="title">Projeto Tesla</h3>
+                                <p>Projeto inspirado no site oficial da Tesla, focado no Cybertruck. Desenvolvido com HTML e CSS para aprimorar habilidades em estruturação e estilização web.</p>
+                                <details class="description">
+                                    <summary>Saiba mais</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias vero necessitatibus? Culpa dolor maxime magnam dolore sint. Reiciendis totam, consequatur saepe quas eum asperiores atque autem ducimus rerum dolorem.</p>
+                                </details>
+                            </div>
+                        </div>
+                        <!--Fim Projeto -->
+                        <!--Projeto -->
+                        <div class="projeto">
+                            <figure>
+                                <a href="https://kallebyalencar.github.io/projeto-cidades-silenciosas/" target="_blank"><img src="assets/img/projeto-cidades-silenciosas.png" alt="Projeto Monitor Ruído" class="foto"></a>
+                            </figure>
+                            <div class="projeto-info">
+                                <p class="periodo">2025</p>
+                                <h3 class="title">Projeto Cidades Silenciosas</h3>
+                                <p>Projeto Cidades Silenciosas, desenvolvido com HTML, CSS e PHP, simula a identificação de níveis de ruído urbano com base na localização geográfica, aplicando conceitos práticos dessas linguagens.</p>
+                                <details class="description">
+                                    <summary>Saiba mais</summary>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias vero necessitatibus? Culpa dolor maxime magnam dolore sint. Reiciendis totam, consequatur saepe quas eum asperiores atque autem ducimus rerum dolorem.</p>
+                                </details>
+                            </div>
+                        </div>
+                        <!--Fim Projeto -->
                     </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-code"></i>git + github
-                            </span>
-                            <span class="porcent">
-                                90%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-brain"></i>Colaboração
-                            </span>
-                            <span class="porcent">
-                                100%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 100%;"></div>
-                        </div>
-                    </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-brain"></i>Comunicação
-                            </span>
-                            <span class="porcent">
-                                95%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-brain"></i>Adaptabilidade
-                            </span>
-                            <span class="porcent">
-                                100%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 100%;"></div>
-                        </div>
-                    </div>
-                    <!-- Final item -->
-
-                    <!-- Inicio item -->
-                    <div class="item">
-                        <div class="info">
-                            <span class="nome">
-                                <i class="fa-solid fa-brain"></i>Proatividade
-                            </span>
-                            <span class="porcent">
-                                95%
-                            </span>
-                        </div>
-                        <div class="barra">
-                            <div class="progress" style="width: 95%;"></div>
-                        </div>
-                    </div>
-                    <!-- Final item -->
-                </div>
-            </article> <!-- Fim article .skills -->
-
-            <article class="training">
-                <h2><i class="fa-solid fa-graduation-cap"></i>Formação</h2>
-
-                <div class="training-container">
-                    <!-- start training -->
-                    <div class="curso">
-                        <p class="periodo">2016</p>
-                        <h3 class="institution"><a href="https://www.microlins.com.br/" target="_blank" rel="nofollow">Microlins</a></h3>
-                        <p class="titulation">Pacote Office</p>
-                    </div>
-                    <!-- end training -->
-
-                    <!-- start training -->
-                    <div class="curso">
-                        <p class="periodo">2022 - 2025</p>
-                        <h3 class="institution"><a href="https://portal.ifce.edu.br/" target="_blank" rel="nofollow">Instituto Federal Ceará</a></h3>
-                        <p class="titulation">Técnico em Eletrotécnica</p>
-                    </div>
-                    <!-- end training -->
-
-                    <!-- start training -->
-                    <div class="curso">
-                        <p class="periodo">2025</p>
-                        <h3 class="institution"><a href="https://unifapce.edu.br/institucional/" target="_blank" rel="nofollow">Centro Universitário Paraíso</a></h3>
-                        <p class="titulation">Análise e Desenvolvimento de Sistemas</p>
-                    </div>
-                    <!-- end training -->
-                </div>
-
-            </article> <!-- Fim article .formacao -->
-
-            <article class="projetos">
-                <h2><i class="fa-solid fa-folder-open"></i>Projetos</h2>
-            </article> <!-- Fim article .projetos -->
-        </section>
+                </article> <!-- Fim article .projetos -->
+            </section>
+        </div>
     </main>
 
     <footer>
-
+        Portfólio desenvolvido por <a href="https://github.com/kallebyalencar" target="_blank">Kalleby Alencar</a>
     </footer>
 
     <script src="assets/js/script.js"></script>
