@@ -124,7 +124,7 @@ article h2 {
     font-size: 1.5em;
     font-weight: 600;
     color: var(--destaque);
-    margin: 10px;
+    margin-bottom: 20px;
 }
 
 article h2 i {
@@ -133,7 +133,7 @@ article h2 i {
 
 .audio-container {
     display: flex;
-    background-color: transparent;
+    background-color: var(--fundo-card);
     padding: 15px;
     border-radius: 8px;
     align-items: center;
@@ -146,7 +146,7 @@ article h2 i {
     width: 100%;
     border-radius: 8px;
     height: 45px; /* altura do player */
-    border: 5px solid #00336c;
+    border: 5px solid var(--fundo-card);
 }
 
 .skill-container {
@@ -156,7 +156,6 @@ article h2 i {
 }
 
 .skill-container .item {
-    padding: 15px 0;
     text-transform: capitalize;
     margin-left: 8px;
 }
@@ -194,9 +193,42 @@ article h2 i {
     border-radius: 4px;
 }
 
-.skills h2 {
-    margin-bottom: 20px;
+.training-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
 }
+
+.training-container .periodo {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+.training-container .institution a {
+    color: var(--destaque-inverso);
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.training-container .curso {
+    background-color: var(--fundo-principal);
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso) ;
+    padding-left: 15px;
+    cursor: pointer;
+    transition: border-width 0.5s, border-color 0.5s;
+    &:hover {
+        border-left-width: 15px;
+        border-color: var(--destaque);
+    }
+}
+
+
 
 
 
