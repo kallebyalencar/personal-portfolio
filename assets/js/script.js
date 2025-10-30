@@ -22,24 +22,6 @@ botao.addEventListener('click', () => {
     localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
 });
 
-// //scroll suave para links de navegação
-// const navLinks = document.querySelectorAll('.menu ul li a');
-// navLinks.forEach(link => {
-//     link.addEventListener('click', function(e) {
-//         e.preventDefault();
-//         const target = document.querySelector(this.getAttribute('href'));
-//         if (target) {
-//             const headerHeight = document.querySelector('header').offsetHeight;
-//             const targetPosition = target.offsetTop - headerHeight - 20;
-//             window.scrollTo({
-//                 top: targetPosition,
-//                 behavior: 'smooth'
-//             });
-//         }
-//     });
-// });
-
-
 // Scroll suave manual e compatível com Chrome Desktop
 const linksMenu = document.querySelectorAll('.menu a[href^="#"]');
 
@@ -56,7 +38,7 @@ linksMenu.forEach(link => {
         const headerHeight = document.querySelector('header').offsetHeight;
 
         // calcula posição real do destino
-        const posicao = destino.offsetTop - headerHeight - 25;
+        const posicao = destino.offsetTop - headerHeight - 20;
 
         // rolagem suave *manual* — sem depender do comportamento nativo
         smoothScrollTo(0, posicao, 800); // 800ms = 0.8s de duração
