@@ -274,9 +274,29 @@ article h2 i {
     }
 }
 
-.projeto-info h3 {
-    font-size: 1.5em;
+
+.projeto-info .periodo {
     font-weight: bold;
+    color: var(--texto);
+}
+
+.projeto-info h3 {
+    color: var(--destaque-inverso);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.projeto-info p {
+    padding:5px 0;
+}
+
+
+.description summary {
+    color: var(--destaque);
+}
+
+.description > p {
+    font-size: 0.9em;
 }
 
 footer {
@@ -296,6 +316,7 @@ footer a {
         color: var(--destaque-inverso);
     }
 }
+
 
 
 

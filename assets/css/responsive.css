@@ -27,7 +27,8 @@
         justify-content: space-around;
     }
     .projeto-container .projeto-info {
-        max-width: 70%;
+        padding: 10px;
+        width: 100%;
     }
     .projeto-container .foto {
         aspect-ratio: 1/1;
