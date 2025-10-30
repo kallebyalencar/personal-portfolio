@@ -1,7 +1,24 @@
-@media screen and (min-width: 768px) {
-    .ficha .paragrafo {
-        width: 85%;
+@media screen and (min-width: 1024px) {
+    .main-flex{
+        grid-template-columns: auto 300px 1fr auto;
     }
+
+    .ficha {
+        grid-column: 2 / 3;
+        height: fit-content;
+        position: sticky;
+        top: 97px;
+    }
+
+    .detalhes{
+        grid-column: 3 / 4;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
     .skill-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -17,4 +34,3 @@
         max-height: 300px;
     }
 }
-

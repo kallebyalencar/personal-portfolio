@@ -17,10 +17,6 @@
     --fundo-card: #ffffff;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -99,14 +95,9 @@ header {
     text-align: left;
 }
 
-.ficha .paragrafo {
-    margin: 0 auto;
-    width: 85%;
-}
-
 .ficha p {
     color: var(--texto);
-    text-align: justify;
+    text-align: left;
 }
 
 
