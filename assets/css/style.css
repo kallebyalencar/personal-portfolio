@@ -238,6 +238,10 @@ article h2 i {
     }
 }
 
+.training-container .curso .titulation {
+    margin-bottom: 8px;
+}
+
 .projeto-container {
     display: flex;
     flex-direction: column-reverse;
