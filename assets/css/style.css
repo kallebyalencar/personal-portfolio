@@ -210,6 +210,7 @@ article h2 i {
 }
 
 .training-container .periodo {
+    text-decoration: none;
     font-size: 0.9em;
     font-weight: bold;
     color: var(--texto);
